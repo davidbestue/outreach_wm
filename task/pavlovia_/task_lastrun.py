@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 08, 2021, at 23:43
+    on abril 08, 2021, at 23:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -157,6 +157,13 @@ response = visual.Polygon(
 mouse = event.Mouse(win=win)
 x, y = [None, None]
 mouse.mouseClock = core.Clock()
+text = visual.TextStim(win=win, name='text',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
+    color='black', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-10.0);
 
 # Initialize components for Routine "delay_long"
 delay_longClock = core.Clock()
@@ -226,6 +233,13 @@ response_2 = visual.Polygon(
 mouse_2 = event.Mouse(win=win)
 x, y = [None, None]
 mouse_2.mouseClock = core.Clock()
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
+    color='black', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-10.0);
 
 # Initialize components for Routine "feedback"
 feedbackClock = core.Clock()
@@ -383,7 +397,7 @@ for thisTrial in trials:
     # setup some python lists for storing info about the mouse
     gotValidClick = False  # until a click is received
     # keep track of which components have finished
-    delay_shortComponents = [pos0, pos45, pos90, pos135, pos180, pos225, pos270, pos315, response, mouse]
+    delay_shortComponents = [pos0, pos45, pos90, pos135, pos180, pos225, pos270, pos315, response, mouse, text]
     for thisComponent in delay_shortComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -569,6 +583,15 @@ for thisTrial in trials:
                     # abort routine on response
                     continueRoutine = False
         
+        # *text* updates
+        if text.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            text.frameNStart = frameN  # exact frame index
+            text.tStart = t  # local t and not account for scr refresh
+            text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+            text.setAutoDraw(True)
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -618,6 +641,8 @@ for thisTrial in trials:
     trials.addData('mouse.rightButton', buttons[2])
     trials.addData('mouse.started', mouse.tStart)
     trials.addData('mouse.stopped', mouse.tStop)
+    trials.addData('text.started', text.tStartRefresh)
+    trials.addData('text.stopped', text.tStopRefresh)
     # the Routine "delay_short" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
@@ -667,7 +692,7 @@ for thisTrial_2 in trials_2:
     # setup some python lists for storing info about the mouse_2
     gotValidClick = False  # until a click is received
     # keep track of which components have finished
-    delay_longComponents = [pos0_2, pos45_2, pos90_2, pos135_2, pos180_2, pos225_2, pos270_2, pos315_2, response_2, mouse_2]
+    delay_longComponents = [pos0_2, pos45_2, pos90_2, pos135_2, pos180_2, pos225_2, pos270_2, pos315_2, response_2, mouse_2, text_4]
     for thisComponent in delay_longComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -853,6 +878,15 @@ for thisTrial_2 in trials_2:
                     # abort routine on response
                     continueRoutine = False
         
+        # *text_4* updates
+        if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_4.frameNStart = frameN  # exact frame index
+            text_4.tStart = t  # local t and not account for scr refresh
+            text_4.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+            text_4.setAutoDraw(True)
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -902,6 +936,8 @@ for thisTrial_2 in trials_2:
     trials_2.addData('mouse_2.rightButton', buttons[2])
     trials_2.addData('mouse_2.started', mouse_2.tStart)
     trials_2.addData('mouse_2.stopped', mouse_2.tStop)
+    trials_2.addData('text_4.started', text_4.tStartRefresh)
+    trials_2.addData('text_4.stopped', text_4.tStopRefresh)
     # the Routine "delay_long" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
