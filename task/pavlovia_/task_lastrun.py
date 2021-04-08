@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 08, 2021, at 16:21
+    on abril 08, 2021, at 17:11
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,7 +15,7 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock
+from psychopy import sound, gui, visual, core, data, event, logging, clock, hardware
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
@@ -91,30 +91,65 @@ key_resp_3 = keyboard.Keyboard()
 
 # Initialize components for Routine "trial_2"
 trial_2Clock = core.Clock()
-mouse = event.Mouse(win=win)
-x, y = [None, None]
-mouse.mouseClock = core.Clock()
-polygon = visual.ShapeStim(
-    win=win, name='polygon',
-    vertices=[[-(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [+(0.8, 0.8)[0]/2.0,-(0.8, 0.8)[1]/2.0], [0,(0.8, 0.8)[1]/2.0]],
-    ori=0, pos=(0, -0.35),
-    lineWidth=0.005, lineColor=[1,1,1], lineColorSpace='rgb',
+pos0 = visual.Polygon(
+    win=win, name='pos0',
+    edges=100, size=(0.1, 0.1),
+    ori=90, pos=(0.5, 0),
+    lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+pos45 = visual.Polygon(
+    win=win, name='pos45',
+    edges=100, size=(0.1, 0.1),
+    ori=0, pos=(0.25, 0.25),
+    lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-polygon_2 = visual.Rect(
-    win=win, name='polygon_2',
-    width=(0.5, 0.5)[0], height=(0.5, 0.5)[1],
-    ori=90, pos=(0, 0.35),
-    lineWidth=0.005, lineColor=[1,1,1], lineColorSpace='rgb',
+pos90 = visual.Polygon(
+    win=win, name='pos90',
+    edges=100, size=(0.1, 0.1),
+    ori=0, pos=(0, 0.5),
+    lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-2.0, interpolate=True)
-polygon_3 = visual.Polygon(
-    win=win, name='polygon_3',
-    edges=0, size=(0.5, 0.5),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=Color3, fillColorSpace='rgb',
+pos135 = visual.Polygon(
+    win=win, name='pos135',
+    edges=100, size=(0.1, 0.1),
+    ori=0, pos=(-0.25, 0.25),
+    lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-3.0, interpolate=True)
+pos180 = visual.Polygon(
+    win=win, name='pos180',
+    edges=100, size=(0.1, 0.1),
+    ori=0, pos=(-0.50, 0),
+    lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-4.0, interpolate=True)
+pos225 = visual.Polygon(
+    win=win, name='pos225',
+    edges=100, size=(-0.25, -0.25),
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-5.0, interpolate=True)
+pos270 = visual.Polygon(
+    win=win, name='pos270',
+    edges=100, size=(0.1, 0.1),
+    ori=0, pos=(0, -0.5),
+    lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-6.0, interpolate=True)
+pos315 = visual.Polygon(
+    win=win, name='pos315',
+    edges=100, size=(0.1, 0.1),
+    ori=0, pos=(0.25, -0.25),
+    lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=-7.0, interpolate=True)
+mouse_2 = event.Mouse(win=win)
+x, y = [None, None]
+mouse_2.mouseClock = core.Clock()
 
 # Initialize components for Routine "feedback"
 feedbackClock = core.Clock()
@@ -251,12 +286,32 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "trial_2"-------
     # update component parameters for each repeat
-    # setup some python lists for storing info about the mouse
+    pos0.setFillColor(Color0)
+    pos0.setLineColor(Color0)
+    pos45.setFillColor(Color45)
+    pos45.setLineColor(Color45)
+    pos90.setFillColor(Color90)
+    pos90.setLineColor(Color90)
+    pos135.setFillColor(Color135)
+    pos135.setLineColor(Color135)
+    pos180.setFillColor(Color180)
+    pos180.setLineColor(Color180)
+    pos225.setFillColor(Color225)
+    pos225.setLineColor(Color225)
+    pos270.setFillColor(Color270)
+    pos270.setLineColor(Color270)
+    pos315.setFillColor(Color315)
+    pos315.setLineColor(Color315)
+    # setup some python lists for storing info about the mouse_2
+    mouse_2.x = []
+    mouse_2.y = []
+    mouse_2.leftButton = []
+    mouse_2.midButton = []
+    mouse_2.rightButton = []
+    mouse_2.time = []
     gotValidClick = False  # until a click is received
-    polygon.setFillColor(Color1)
-    polygon_2.setFillColor(Color2)
     # keep track of which components have finished
-    trial_2Components = [mouse, polygon, polygon_2, polygon_3]
+    trial_2Components = [pos0, pos45, pos90, pos135, pos180, pos225, pos270, pos315, mouse_2]
     for thisComponent in trial_2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -279,58 +334,165 @@ for thisTrial in trials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        # *mouse* updates
-        if mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+        
+        # *pos0* updates
+        if pos0.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            mouse.frameNStart = frameN  # exact frame index
-            mouse.tStart = t  # local t and not account for scr refresh
-            mouse.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(mouse, 'tStartRefresh')  # time at next scr refresh
-            mouse.status = STARTED
-            mouse.mouseClock.reset()
-            prevButtonState = mouse.getPressed()  # if button is down already this ISN'T a new click
-        if mouse.status == STARTED:  # only update if started and not finished!
-            buttons = mouse.getPressed()
+            pos0.frameNStart = frameN  # exact frame index
+            pos0.tStart = t  # local t and not account for scr refresh
+            pos0.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos0, 'tStartRefresh')  # time at next scr refresh
+            pos0.setAutoDraw(True)
+        if pos0.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos0.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos0.tStop = t  # not accounting for scr refresh
+                pos0.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos0, 'tStopRefresh')  # time at next scr refresh
+                pos0.setAutoDraw(False)
+        
+        # *pos45* updates
+        if pos45.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos45.frameNStart = frameN  # exact frame index
+            pos45.tStart = t  # local t and not account for scr refresh
+            pos45.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos45, 'tStartRefresh')  # time at next scr refresh
+            pos45.setAutoDraw(True)
+        if pos45.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos45.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos45.tStop = t  # not accounting for scr refresh
+                pos45.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos45, 'tStopRefresh')  # time at next scr refresh
+                pos45.setAutoDraw(False)
+        
+        # *pos90* updates
+        if pos90.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos90.frameNStart = frameN  # exact frame index
+            pos90.tStart = t  # local t and not account for scr refresh
+            pos90.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos90, 'tStartRefresh')  # time at next scr refresh
+            pos90.setAutoDraw(True)
+        if pos90.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos90.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos90.tStop = t  # not accounting for scr refresh
+                pos90.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos90, 'tStopRefresh')  # time at next scr refresh
+                pos90.setAutoDraw(False)
+        
+        # *pos135* updates
+        if pos135.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos135.frameNStart = frameN  # exact frame index
+            pos135.tStart = t  # local t and not account for scr refresh
+            pos135.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos135, 'tStartRefresh')  # time at next scr refresh
+            pos135.setAutoDraw(True)
+        if pos135.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos135.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos135.tStop = t  # not accounting for scr refresh
+                pos135.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos135, 'tStopRefresh')  # time at next scr refresh
+                pos135.setAutoDraw(False)
+        
+        # *pos180* updates
+        if pos180.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos180.frameNStart = frameN  # exact frame index
+            pos180.tStart = t  # local t and not account for scr refresh
+            pos180.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos180, 'tStartRefresh')  # time at next scr refresh
+            pos180.setAutoDraw(True)
+        if pos180.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos180.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos180.tStop = t  # not accounting for scr refresh
+                pos180.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos180, 'tStopRefresh')  # time at next scr refresh
+                pos180.setAutoDraw(False)
+        
+        # *pos225* updates
+        if pos225.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos225.frameNStart = frameN  # exact frame index
+            pos225.tStart = t  # local t and not account for scr refresh
+            pos225.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos225, 'tStartRefresh')  # time at next scr refresh
+            pos225.setAutoDraw(True)
+        if pos225.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos225.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos225.tStop = t  # not accounting for scr refresh
+                pos225.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos225, 'tStopRefresh')  # time at next scr refresh
+                pos225.setAutoDraw(False)
+        
+        # *pos270* updates
+        if pos270.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos270.frameNStart = frameN  # exact frame index
+            pos270.tStart = t  # local t and not account for scr refresh
+            pos270.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos270, 'tStartRefresh')  # time at next scr refresh
+            pos270.setAutoDraw(True)
+        if pos270.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos270.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos270.tStop = t  # not accounting for scr refresh
+                pos270.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos270, 'tStopRefresh')  # time at next scr refresh
+                pos270.setAutoDraw(False)
+        
+        # *pos315* updates
+        if pos315.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pos315.frameNStart = frameN  # exact frame index
+            pos315.tStart = t  # local t and not account for scr refresh
+            pos315.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pos315, 'tStartRefresh')  # time at next scr refresh
+            pos315.setAutoDraw(True)
+        if pos315.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > pos315.tStartRefresh + 2-frameTolerance:
+                # keep track of stop time/frame for later
+                pos315.tStop = t  # not accounting for scr refresh
+                pos315.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(pos315, 'tStopRefresh')  # time at next scr refresh
+                pos315.setAutoDraw(False)
+        # *mouse_2* updates
+        if mouse_2.status == NOT_STARTED and t >= 1.5-frameTolerance:
+            # keep track of start time/frame for later
+            mouse_2.frameNStart = frameN  # exact frame index
+            mouse_2.tStart = t  # local t and not account for scr refresh
+            mouse_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(mouse_2, 'tStartRefresh')  # time at next scr refresh
+            mouse_2.status = STARTED
+            mouse_2.mouseClock.reset()
+            prevButtonState = mouse_2.getPressed()  # if button is down already this ISN'T a new click
+        if mouse_2.status == STARTED:  # only update if started and not finished!
+            buttons = mouse_2.getPressed()
             if buttons != prevButtonState:  # button state changed?
                 prevButtonState = buttons
                 if sum(buttons) > 0:  # state changed to a new click
-                    # abort routine on response
-                    continueRoutine = False
-        
-        # *polygon* updates
-        if polygon.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            polygon.frameNStart = frameN  # exact frame index
-            polygon.tStart = t  # local t and not account for scr refresh
-            polygon.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon, 'tStartRefresh')  # time at next scr refresh
-            polygon.setAutoDraw(True)
-        
-        # *polygon_2* updates
-        if polygon_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            polygon_2.frameNStart = frameN  # exact frame index
-            polygon_2.tStart = t  # local t and not account for scr refresh
-            polygon_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon_2, 'tStartRefresh')  # time at next scr refresh
-            polygon_2.setAutoDraw(True)
-        
-        # *polygon_3* updates
-        if polygon_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            polygon_3.frameNStart = frameN  # exact frame index
-            polygon_3.tStart = t  # local t and not account for scr refresh
-            polygon_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(polygon_3, 'tStartRefresh')  # time at next scr refresh
-            polygon_3.setAutoDraw(True)
-        if polygon_3.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > polygon_3.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                polygon_3.tStop = t  # not accounting for scr refresh
-                polygon_3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(polygon_3, 'tStopRefresh')  # time at next scr refresh
-                polygon_3.setAutoDraw(False)
+                    x, y = mouse_2.getPos()
+                    mouse_2.x.append(x)
+                    mouse_2.y.append(y)
+                    buttons = mouse_2.getPressed()
+                    mouse_2.leftButton.append(buttons[0])
+                    mouse_2.midButton.append(buttons[1])
+                    mouse_2.rightButton.append(buttons[2])
+                    mouse_2.time.append(mouse_2.mouseClock.getTime())
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -353,22 +515,31 @@ for thisTrial in trials:
     for thisComponent in trial_2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    trials.addData('pos0.started', pos0.tStartRefresh)
+    trials.addData('pos0.stopped', pos0.tStopRefresh)
+    trials.addData('pos45.started', pos45.tStartRefresh)
+    trials.addData('pos45.stopped', pos45.tStopRefresh)
+    trials.addData('pos90.started', pos90.tStartRefresh)
+    trials.addData('pos90.stopped', pos90.tStopRefresh)
+    trials.addData('pos135.started', pos135.tStartRefresh)
+    trials.addData('pos135.stopped', pos135.tStopRefresh)
+    trials.addData('pos180.started', pos180.tStartRefresh)
+    trials.addData('pos180.stopped', pos180.tStopRefresh)
+    trials.addData('pos225.started', pos225.tStartRefresh)
+    trials.addData('pos225.stopped', pos225.tStopRefresh)
+    trials.addData('pos270.started', pos270.tStartRefresh)
+    trials.addData('pos270.stopped', pos270.tStopRefresh)
+    trials.addData('pos315.started', pos315.tStartRefresh)
+    trials.addData('pos315.stopped', pos315.tStopRefresh)
     # store data for trials (TrialHandler)
-    x, y = mouse.getPos()
-    buttons = mouse.getPressed()
-    trials.addData('mouse.x', x)
-    trials.addData('mouse.y', y)
-    trials.addData('mouse.leftButton', buttons[0])
-    trials.addData('mouse.midButton', buttons[1])
-    trials.addData('mouse.rightButton', buttons[2])
-    trials.addData('mouse.started', mouse.tStart)
-    trials.addData('mouse.stopped', mouse.tStop)
-    trials.addData('polygon.started', polygon.tStartRefresh)
-    trials.addData('polygon.stopped', polygon.tStopRefresh)
-    trials.addData('polygon_2.started', polygon_2.tStartRefresh)
-    trials.addData('polygon_2.stopped', polygon_2.tStopRefresh)
-    trials.addData('polygon_3.started', polygon_3.tStartRefresh)
-    trials.addData('polygon_3.stopped', polygon_3.tStopRefresh)
+    trials.addData('mouse_2.x', mouse_2.x)
+    trials.addData('mouse_2.y', mouse_2.y)
+    trials.addData('mouse_2.leftButton', mouse_2.leftButton)
+    trials.addData('mouse_2.midButton', mouse_2.midButton)
+    trials.addData('mouse_2.rightButton', mouse_2.rightButton)
+    trials.addData('mouse_2.time', mouse_2.time)
+    trials.addData('mouse_2.started', mouse_2.tStart)
+    trials.addData('mouse_2.stopped', mouse_2.tStop)
     # the Routine "trial_2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()

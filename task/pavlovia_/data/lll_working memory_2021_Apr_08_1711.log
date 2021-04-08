@@ -1,0 +1,104 @@
+10.6556 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016B49DB3C18>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000016B49E86E48>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6558 	EXP 	window1: recordFrameIntervals = False
+10.8204 	EXP 	window1: recordFrameIntervals = True
+11.0045 	EXP 	window1: recordFrameIntervals = False
+11.5954 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Calibri', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([-0.25,  0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.6071 	EXP 	Created pos0 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=0.005, name='pos0', opacity=1.0, ori=array(90.), pos=array([0.5, 0. ]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+11.6155 	EXP 	Created pos45 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos45', opacity=1.0, ori=array(0.), pos=array([0.25, 0.25]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+11.6232 	EXP 	Created pos90 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=0.005, name='pos90', opacity=1.0, ori=array(0.), pos=array([0. , 0.5]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+11.8511 	EXP 	window1: mouseVisible = True
+11.0246 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000261E5423C18>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000261E54F5E48>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.0247 	EXP 	window1: recordFrameIntervals = False
+11.1894 	EXP 	window1: recordFrameIntervals = True
+11.3731 	EXP 	window1: recordFrameIntervals = False
+11.9988 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Calibri', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([-0.25,  0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.0108 	EXP 	Created pos0 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=0.005, name='pos0', opacity=1.0, ori=array(90.), pos=array([0.5, 0. ]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.0184 	EXP 	Created pos45 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos45', opacity=1.0, ori=array(0.), pos=array([0.25, 0.25]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.0267 	EXP 	Created pos90 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=0.005, name='pos90', opacity=1.0, ori=array(0.), pos=array([0. , 0.5]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.0350 	EXP 	Created pos135 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-3.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos135', opacity=1.0, ori=array(0.), pos=array([-0.25,  0.25]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.0452 	EXP 	Created pos180 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-4.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos180', opacity=1.0, ori=array(0.), pos=array([-0.5,  0. ]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.0550 	EXP 	Created pos225 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-5.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos225', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([-0.25, -0.25]), units='height', vertices=ndarray(...), win=Window(...))
+12.0646 	EXP 	Created pos270 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-6.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos270', opacity=1.0, ori=array(0.), pos=array([ 0. , -0.5]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.0768 	EXP 	Created pos315 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-7.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='pos315', opacity=1.0, ori=array(0.), pos=array([ 0.25, -0.25]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+12.1086 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Calibri', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.1546 	EXP 	text_3: autoDraw = True
+17.3027 	EXP 	Imported Trials_.xlsx as conditions, 3 conditions, 8 params
+17.3037 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+17.3051 	EXP 	New trial (rep=0, index=0): OrderedDict([('Color0', [1, 1, 0]), ('Color45', [1, 1, 1]), ('Color90', [0, 0, 1]), ('Color135', [0, 0, 0]), ('Color180', [1, 1, 0]), ('Color225', [0, 0, 0]), ('Color270', [0, 0, 1]), ('Color315', [0, 0, 0])])
+17.3283 	DATA 	Keypress: space
+17.3323 	EXP 	text_3: autoDraw = False
+17.3323 	EXP 	pos0: fillColor = '[1. 1. 0.] (rgb)'
+17.3323 	EXP 	pos0: lineColor = '[1. 1. 0.] (rgb)'
+17.3323 	EXP 	pos45: fillColor = '[1. 1. 1.] (rgb)'
+17.3323 	EXP 	pos45: lineColor = '[1. 1. 1.] (rgb)'
+17.3323 	EXP 	pos90: fillColor = '[0. 0. 1.] (rgb)'
+17.3323 	EXP 	pos90: lineColor = '[0. 0. 1.] (rgb)'
+17.3323 	EXP 	pos135: fillColor = '[0. 0. 0.] (rgb)'
+17.3323 	EXP 	pos135: lineColor = '[0. 0. 0.] (rgb)'
+17.3323 	EXP 	pos180: fillColor = '[1. 1. 0.] (rgb)'
+17.3323 	EXP 	pos180: lineColor = '[1. 1. 0.] (rgb)'
+17.3323 	EXP 	pos225: fillColor = '[0. 0. 0.] (rgb)'
+17.3323 	EXP 	pos225: lineColor = '[0. 0. 0.] (rgb)'
+17.3323 	EXP 	pos270: fillColor = '[0. 0. 1.] (rgb)'
+17.3323 	EXP 	pos270: lineColor = '[0. 0. 1.] (rgb)'
+17.3323 	EXP 	pos315: fillColor = '[0. 0. 0.] (rgb)'
+17.3323 	EXP 	pos315: lineColor = '[0. 0. 0.] (rgb)'
+17.3323 	EXP 	pos0: autoDraw = True
+17.3323 	EXP 	pos45: autoDraw = True
+17.3323 	EXP 	pos90: autoDraw = True
+17.3323 	EXP 	pos135: autoDraw = True
+17.3323 	EXP 	pos180: autoDraw = True
+17.3323 	EXP 	pos225: autoDraw = True
+17.3323 	EXP 	pos270: autoDraw = True
+17.3323 	EXP 	pos315: autoDraw = True
+19.3368 	EXP 	pos0: autoDraw = False
+19.3368 	EXP 	pos45: autoDraw = False
+19.3368 	EXP 	pos90: autoDraw = False
+19.3368 	EXP 	pos135: autoDraw = False
+19.3368 	EXP 	pos180: autoDraw = False
+19.3368 	EXP 	pos225: autoDraw = False
+19.3368 	EXP 	pos270: autoDraw = False
+19.3368 	EXP 	pos315: autoDraw = False
+22.5435 	DATA 	Mouse: Left button down, pos=(798,676)
+22.6356 	DATA 	Mouse:  Left button up, pos=(798,676)
+27.3191 	DATA 	Mouse: Left button down, pos=(1394,564)
+27.4336 	DATA 	Mouse:  Left button up, pos=(1394,564)
+29.0217 	DATA 	Mouse: wheel shift=(0,-1), pos=(1152,540)
+29.1007 	DATA 	Mouse: wheel shift=(0,-1), pos=(1154,519)
+29.1343 	DATA 	Mouse: wheel shift=(0,-1), pos=(1153,514)
+29.1865 	DATA 	Mouse: wheel shift=(0,-1), pos=(1150,512)
+29.2840 	DATA 	Mouse: wheel shift=(0,1), pos=(1150,512)
+29.2875 	DATA 	Mouse: wheel shift=(0,1), pos=(1150,512)
+29.3172 	DATA 	Mouse: wheel shift=(0,1), pos=(1150,512)
+29.3671 	DATA 	Mouse: wheel shift=(0,1), pos=(1150,512)
+29.4011 	DATA 	Mouse: wheel shift=(0,1), pos=(1151,512)
+29.5509 	DATA 	Mouse: wheel shift=(0,-1), pos=(1151,512)
+29.5839 	DATA 	Mouse: wheel shift=(0,-1), pos=(1151,512)
+29.7048 	DATA 	Mouse: Left button down, pos=(1151,512)
+29.8335 	DATA 	Mouse:  Left button up, pos=(1151,512)
+29.8858 	DATA 	Mouse: Left button down, pos=(1151,512)
+29.9999 	DATA 	Mouse:  Left button up, pos=(1151,512)
+30.0505 	DATA 	Mouse: Left button down, pos=(1151,512)
+30.1504 	DATA 	Mouse:  Left button up, pos=(1151,512)
+30.7669 	DATA 	Mouse: wheel shift=(0,1), pos=(721,567)
+30.8001 	DATA 	Mouse: wheel shift=(0,1), pos=(722,567)
+30.8171 	DATA 	Mouse: wheel shift=(0,1), pos=(722,567)
+30.8681 	DATA 	Mouse: wheel shift=(0,1), pos=(733,564)
+31.1840 	DATA 	Mouse: Left button down, pos=(778,541)
+31.3158 	DATA 	Mouse:  Left button up, pos=(778,541)
+31.5503 	DATA 	Mouse: Left button down, pos=(778,541)
+31.6660 	DATA 	Mouse:  Left button up, pos=(778,541)
+31.7341 	DATA 	Mouse: Left button down, pos=(778,541)
+31.8659 	DATA 	Mouse:  Left button up, pos=(778,541)
+31.9333 	DATA 	Mouse: Left button down, pos=(778,541)
+32.0659 	DATA 	Mouse:  Left button up, pos=(778,541)
+32.0827 	DATA 	Mouse: Left button down, pos=(778,541)
+32.2162 	DATA 	Mouse:  Left button up, pos=(778,541)
+32.2528 	DATA 	Mouse: Left button down, pos=(778,541)
+32.3824 	DATA 	Mouse:  Left button up, pos=(778,541)
+33.0496 	DATA 	Keypress: space
+33.5160 	DATA 	Keypress: space
+33.6824 	DATA 	Keypress: space
+33.8493 	DATA 	Keypress: space
+35.8317 	DATA 	Keypress: lalt
+52.0990 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,64 @@
+23.0715 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002CC6762F6D8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002CC674FE908>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+23.0716 	EXP 	window1: recordFrameIntervals = False
+23.2363 	EXP 	window1: recordFrameIntervals = True
+23.4201 	EXP 	window1: recordFrameIntervals = False
+24.2215 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Calibri', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([-0.25,  0.  ]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+24.2257 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=0.005, name='polygon', opacity=1.0, ori=array(0.), pos=array([ 0.  , -0.35]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+24.2321 	EXP 	Created polygon_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=0.005, name='polygon_2', opacity=1.0, ori=array(90.), pos=array([0.  , 0.35]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+24.2380 	EXP 	Created polygon_3 = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-3.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='polygon_3', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=array([[0. , 0.5]]), win=Window(...))
+24.2634 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Calibri', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+24.3071 	EXP 	text_3: autoDraw = True
+26.4405 	DATA 	Mouse: Left button down, pos=(778,668)
+26.4881 	DATA 	Mouse:  Left button up, pos=(778,668)
+26.7240 	DATA 	Keypress: space
+27.8386 	DATA 	Keypress: space
+29.1719 	DATA 	Keypress: space
+30.2797 	EXP 	Imported Trials_.xlsx as conditions, 3 conditions, 3 params
+30.2800 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+30.2804 	EXP 	New trial (rep=0, index=0): OrderedDict([('Color1', [1, 1, 0]), ('Color2', [1, 1, 1]), ('Color3', [0, 0, 1])])
+30.2815 	DATA 	Keypress: space
+30.3003 	EXP 	text_3: autoDraw = False
+30.3003 	EXP 	polygon: fillColor = '[1. 1. 0.] (rgb)'
+30.3003 	EXP 	polygon_2: fillColor = '[1. 1. 1.] (rgb)'
+30.3003 	EXP 	polygon_3: fillColor = '[0. 0. 1.] (rgb)'
+30.3003 	EXP 	polygon: autoDraw = True
+30.3003 	EXP 	polygon_2: autoDraw = True
+30.3003 	EXP 	polygon_3: autoDraw = True
+31.3008 	EXP 	polygon_3: autoDraw = False
+41.2038 	DATA 	Mouse: Left button down, pos=(1189,589)
+41.2133 	EXP 	New trial (rep=0, index=1): OrderedDict([('Color1', [1, 1, 0]), ('Color2', [1, 1, 1]), ('Color3', [1, 0.5, 1])])
+41.2229 	EXP 	polygon: autoDraw = False
+41.2229 	EXP 	polygon_2: autoDraw = False
+41.2229 	EXP 	polygon_3: autoDraw = False
+41.2229 	EXP 	polygon: fillColor = '[1. 1. 0.] (rgb)'
+41.2229 	EXP 	polygon_2: fillColor = '[1. 1. 1.] (rgb)'
+41.2229 	EXP 	polygon_3: fillColor = '[1.  0.5 1. ] (rgb)'
+41.2229 	EXP 	polygon: autoDraw = True
+41.2229 	EXP 	polygon_2: autoDraw = True
+41.2229 	EXP 	polygon_3: autoDraw = True
+41.2976 	DATA 	Mouse:  Left button up, pos=(1189,589)
+42.2302 	EXP 	polygon_3: autoDraw = False
+42.6820 	DATA 	Keypress: space
+45.9808 	DATA 	Mouse: Left button down, pos=(1118,567)
+45.9872 	EXP 	New trial (rep=0, index=2): OrderedDict([('Color1', [1, 1, 0]), ('Color2', [1, 1, 1]), ('Color3', [1, 1, 1])])
+45.9971 	EXP 	polygon: autoDraw = False
+45.9971 	EXP 	polygon_2: autoDraw = False
+45.9971 	EXP 	polygon_3: autoDraw = False
+45.9971 	EXP 	polygon: fillColor = '[1. 1. 0.] (rgb)'
+45.9971 	EXP 	polygon_2: fillColor = '[1. 1. 1.] (rgb)'
+45.9971 	EXP 	polygon_3: fillColor = '[1. 1. 1.] (rgb)'
+45.9971 	EXP 	polygon: autoDraw = True
+45.9971 	EXP 	polygon_2: autoDraw = True
+45.9971 	EXP 	polygon_3: autoDraw = True
+46.0797 	DATA 	Mouse:  Left button up, pos=(1122,566)
+46.1638 	DATA 	Mouse: Left button down, pos=(1122,566)
+46.1786 	EXP 	polygon: autoDraw = False
+46.1786 	EXP 	polygon_2: autoDraw = False
+46.1786 	EXP 	polygon_3: autoDraw = False
+46.1786 	EXP 	text_2: autoDraw = True
+46.2647 	DATA 	Mouse:  Left button up, pos=(1122,566)
+48.4831 	DATA 	Mouse: Left button down, pos=(1423,540)
+48.6144 	DATA 	Mouse:  Left button up, pos=(1423,540)
+49.6648 	DATA 	Keypress: space
+50.5840 	DATA 	Keypress: escape
+50.8840 	EXP 	window1: mouseVisible = True
