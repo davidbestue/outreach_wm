@@ -30,7 +30,7 @@ delay_long=9
 low_load = 3
 high_load = 7
 
-trials_each = 16 ##12 min aprox
+trials_each = 8# 6-7min aprox 16 ##12-15 min aprox
 
 
 ##file 1: short delay
