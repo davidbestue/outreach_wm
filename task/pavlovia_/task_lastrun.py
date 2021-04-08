@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 09, 2021, at 00:09
+    on abril 09, 2021, at 00:33
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -395,6 +395,12 @@ for thisTrial in trials:
     response.setFillColor(Cueresp)
     response.setLineColor(Cueresp)
     # setup some python lists for storing info about the mouse
+    mouse.x = []
+    mouse.y = []
+    mouse.leftButton = []
+    mouse.midButton = []
+    mouse.rightButton = []
+    mouse.time = []
     gotValidClick = False  # until a click is received
     # keep track of which components have finished
     delay_shortComponents = [pos0, pos45, pos90, pos135, pos180, pos225, pos270, pos315, response, mouse, text]
@@ -573,13 +579,28 @@ for thisTrial in trials:
             mouse.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(mouse, 'tStartRefresh')  # time at next scr refresh
             mouse.status = STARTED
-            mouse.mouseClock.reset()
             prevButtonState = mouse.getPressed()  # if button is down already this ISN'T a new click
+        if mouse.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > mouse.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                mouse.tStop = t  # not accounting for scr refresh
+                mouse.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(mouse, 'tStopRefresh')  # time at next scr refresh
+                mouse.status = FINISHED
         if mouse.status == STARTED:  # only update if started and not finished!
             buttons = mouse.getPressed()
             if buttons != prevButtonState:  # button state changed?
                 prevButtonState = buttons
                 if sum(buttons) > 0:  # state changed to a new click
+                    x, y = mouse.getPos()
+                    mouse.x.append(x)
+                    mouse.y.append(y)
+                    buttons = mouse.getPressed()
+                    mouse.leftButton.append(buttons[0])
+                    mouse.midButton.append(buttons[1])
+                    mouse.rightButton.append(buttons[2])
+                    mouse.time.append(globalClock.getTime())
                     # abort routine on response
                     continueRoutine = False
         
@@ -632,13 +653,12 @@ for thisTrial in trials:
     trials.addData('response.started', response.tStartRefresh)
     trials.addData('response.stopped', response.tStopRefresh)
     # store data for trials (TrialHandler)
-    x, y = mouse.getPos()
-    buttons = mouse.getPressed()
-    trials.addData('mouse.x', x)
-    trials.addData('mouse.y', y)
-    trials.addData('mouse.leftButton', buttons[0])
-    trials.addData('mouse.midButton', buttons[1])
-    trials.addData('mouse.rightButton', buttons[2])
+    if len(mouse.x): trials.addData('mouse.x', mouse.x[0])
+    if len(mouse.y): trials.addData('mouse.y', mouse.y[0])
+    if len(mouse.leftButton): trials.addData('mouse.leftButton', mouse.leftButton[0])
+    if len(mouse.midButton): trials.addData('mouse.midButton', mouse.midButton[0])
+    if len(mouse.rightButton): trials.addData('mouse.rightButton', mouse.rightButton[0])
+    if len(mouse.time): trials.addData('mouse.time', mouse.time[0])
     trials.addData('mouse.started', mouse.tStart)
     trials.addData('mouse.stopped', mouse.tStop)
     trials.addData('text.started', text.tStartRefresh)
