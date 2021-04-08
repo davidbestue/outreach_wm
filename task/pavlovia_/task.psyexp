@@ -134,7 +134,7 @@
         <Param name="name" updates="None" val="pos0" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="90" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.5, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="regular polygon..." valType="str"/>
         <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
@@ -234,7 +234,7 @@
         <Param name="name" updates="None" val="pos180" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.50, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="regular polygon..." valType="str"/>
         <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
@@ -403,7 +403,7 @@
         <Param name="name" updates="None" val="pos0_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="90" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.5, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="regular polygon..." valType="str"/>
         <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
@@ -503,7 +503,7 @@
         <Param name="name" updates="None" val="pos180_2" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.50, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="regular polygon..." valType="str"/>
         <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>

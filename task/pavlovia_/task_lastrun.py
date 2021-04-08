@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 08, 2021, at 23:57
+    on abril 09, 2021, at 00:09
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -94,7 +94,7 @@ delay_shortClock = core.Clock()
 pos0 = visual.Polygon(
     win=win, name='pos0',
     edges=100, size=(0.1, 0.1),
-    ori=90, pos=(0.5, 0),
+    ori=90, pos=(0.4, 0),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
@@ -122,7 +122,7 @@ pos135 = visual.Polygon(
 pos180 = visual.Polygon(
     win=win, name='pos180',
     edges=100, size=(0.1, 0.1),
-    ori=0, pos=(-0.50, 0),
+    ori=0, pos=(-0.4, 0),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-4.0, interpolate=True)
@@ -170,7 +170,7 @@ delay_longClock = core.Clock()
 pos0_2 = visual.Polygon(
     win=win, name='pos0_2',
     edges=100, size=(0.1, 0.1),
-    ori=90, pos=(0.5, 0),
+    ori=90, pos=(0.4, 0),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
@@ -198,7 +198,7 @@ pos135_2 = visual.Polygon(
 pos180_2 = visual.Polygon(
     win=win, name='pos180_2',
     edges=100, size=(0.1, 0.1),
-    ori=0, pos=(-0.50, 0),
+    ori=0, pos=(-0.4, 0),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-4.0, interpolate=True)
@@ -356,7 +356,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1, method='sequential', 
+trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trials_short_delay.xlsx'),
     seed=None, name='trials')
