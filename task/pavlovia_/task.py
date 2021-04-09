@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 09, 2021, at 02:14
+    on abril 09, 2021, at 02:23
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -91,65 +91,65 @@ key_resp_3 = keyboard.Keyboard()
 
 # Initialize components for Routine "delay_short"
 delay_shortClock = core.Clock()
-pos0 = visual.Polygon(
+pos0 = visual.Rect(
     win=win, name='pos0',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=90, pos=(0.4, 0),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-pos45 = visual.Polygon(
+pos45 = visual.Rect(
     win=win, name='pos45',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0.25, 0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-pos90 = visual.Polygon(
+pos90 = visual.Rect(
     win=win, name='pos90',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0, 0.4),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-2.0, interpolate=True)
-pos135 = visual.Polygon(
+pos135 = visual.Rect(
     win=win, name='pos135',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(-0.25, 0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-3.0, interpolate=True)
-pos180 = visual.Polygon(
+pos180 = visual.Rect(
     win=win, name='pos180',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(-0.4, 0),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-4.0, interpolate=True)
-pos225 = visual.Polygon(
+pos225 = visual.Rect(
     win=win, name='pos225',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(-0.25, -0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-5.0, interpolate=True)
-pos270 = visual.Polygon(
+pos270 = visual.Rect(
     win=win, name='pos270',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0, -0.4),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-6.0, interpolate=True)
-pos315 = visual.Polygon(
+pos315 = visual.Rect(
     win=win, name='pos315',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0.25, -0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-7.0, interpolate=True)
-response = visual.Polygon(
+response = visual.Rect(
     win=win, name='response',
-    edges=100, size=(0.1,0.1),
+    width=(0.1,0.1)[0], height=(0.1,0.1)[1],
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
@@ -167,65 +167,65 @@ text = visual.TextStim(win=win, name='text',
 
 # Initialize components for Routine "delay_long"
 delay_longClock = core.Clock()
-pos0_2 = visual.Polygon(
+pos0_2 = visual.Rect(
     win=win, name='pos0_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=90, pos=(0.4, 0),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-pos45_2 = visual.Polygon(
+pos45_2 = visual.Rect(
     win=win, name='pos45_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0.25, 0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-pos90_2 = visual.Polygon(
+pos90_2 = visual.Rect(
     win=win, name='pos90_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0, 0.4),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-2.0, interpolate=True)
-pos135_2 = visual.Polygon(
+pos135_2 = visual.Rect(
     win=win, name='pos135_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(-0.25, 0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-3.0, interpolate=True)
-pos180_2 = visual.Polygon(
+pos180_2 = visual.Rect(
     win=win, name='pos180_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(-0.4, 0),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-4.0, interpolate=True)
-pos225_2 = visual.Polygon(
+pos225_2 = visual.Rect(
     win=win, name='pos225_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(-0.25, -0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-5.0, interpolate=True)
-pos270_2 = visual.Polygon(
+pos270_2 = visual.Rect(
     win=win, name='pos270_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0, -0.4),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-6.0, interpolate=True)
-pos315_2 = visual.Polygon(
+pos315_2 = visual.Rect(
     win=win, name='pos315_2',
-    edges=100, size=(0.1, 0.1),
+    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
     ori=0, pos=(0.25, -0.25),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
     opacity=1, depth=-7.0, interpolate=True)
-response_2 = visual.Polygon(
+response_2 = visual.Rect(
     win=win, name='response_2',
-    edges=100, size=(0.1,0.1),
+    width=(0.1,0.1)[0], height=(0.1,0.1)[1],
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
