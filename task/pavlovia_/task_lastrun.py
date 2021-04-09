@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 09, 2021, at 02:21
+    on abril 09, 2021, at 04:05
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -358,7 +358,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('trials_short_delay.xlsx'),
+    trialList=data.importConditions('trials_short_delay2.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -376,8 +376,8 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "delay_short"-------
     # update component parameters for each repeat
-    pos0.setFillColor(Color0)
-    pos0.setLineColor(Color0)
+    pos0.setFillColor([Color0_r, Color0_g, Color0_b])
+    pos0.setLineColor([Color0_r, Color0_g, Color0_b])
     pos45.setFillColor(Color45)
     pos45.setLineColor(Color45)
     pos90.setFillColor(Color90)
