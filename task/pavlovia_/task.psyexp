@@ -105,10 +105,10 @@
       <PolygonComponent name="pos45">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color45" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color45_r, $Color45_g, $Color45_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color45" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color45_r, $Color45_g, $Color45_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -130,10 +130,10 @@
       <PolygonComponent name="pos90">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color90" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color90_r, $Color90_g, $Color90_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color90" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color90_r, $Color90_g, $Color90_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="0.005" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -155,10 +155,10 @@
       <PolygonComponent name="pos135">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color135" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color135_r, $Color135_g, $Color135_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color135" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color135_r, $Color135_g, $Color135_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -180,10 +180,10 @@
       <PolygonComponent name="pos180">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color180" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color180_r, $Color180_g, $Color180_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color180" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color180_r, $Color180_g, $Color180_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -205,10 +205,10 @@
       <PolygonComponent name="pos225">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color225" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color225_r, $Color225_g, $Color225_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color225" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color225_r, $Color225_g, $Color225_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -230,10 +230,10 @@
       <PolygonComponent name="pos270">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color270" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color270_r, $Color270_g, $Color270_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color270" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color270_r, $Color270_g, $Color270_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -255,10 +255,10 @@
       <PolygonComponent name="pos315">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color315" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color315_r, $Color315_g, $Color315_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color315" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color315_r, $Color315_g, $Color315_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -280,10 +280,10 @@
       <PolygonComponent name="response">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Cueresp" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Cueresp_r, $Cueresp_g, $Cueresp_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Cueresp" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Cueresp_r, $Cueresp_g, $Cueresp_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -349,10 +349,10 @@
       <PolygonComponent name="pos0_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color0" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color0_r, $Color0_g, $Color0_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color0" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color0_r, $Color0_g, $Color0_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="0.005" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -374,10 +374,10 @@
       <PolygonComponent name="pos45_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color45" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color45_r, $Color45_g, $Color45_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color45" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color45_r, $Color45_g, $Color45_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -399,10 +399,10 @@
       <PolygonComponent name="pos90_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color90" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color90_r, $Color90_g, $Color90_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color90" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color90_r, $Color90_g, $Color90_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="0.005" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -424,10 +424,10 @@
       <PolygonComponent name="pos135_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color135" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color135_r, $Color135_g, $Color135_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color135" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color135_r, $Color135_g, $Color135_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -449,10 +449,10 @@
       <PolygonComponent name="pos180_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color180" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color180_r, $Color180_g, $Color180_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color180" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color180_r, $Color180_g, $Color180_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -474,10 +474,10 @@
       <PolygonComponent name="pos225_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color225" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color225_r, $Color225_g, $Color225_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color225" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color225_r, $Color225_g, $Color225_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -499,10 +499,10 @@
       <PolygonComponent name="pos270_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color270" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color270_r, $Color270_g, $Color270_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color270" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color270_r, $Color270_g, $Color270_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -524,10 +524,10 @@
       <PolygonComponent name="pos315_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Color315" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color315_r, $Color315_g, $Color315_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Color315" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color315_r, $Color315_g, $Color315_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
@@ -549,10 +549,10 @@
       <PolygonComponent name="response_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="set every repeat" val="$Cueresp" valType="str"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Cueresp_r, $Cueresp_g, $Cueresp_b]" valType="str"/>
         <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="set every repeat" val="$Cueresp" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Cueresp_r, $Cueresp_g, $Cueresp_b]" valType="str"/>
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="100" valType="int"/>
