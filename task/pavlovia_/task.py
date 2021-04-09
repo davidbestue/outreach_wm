@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.3),
-    on abril 09, 2021, at 02:16
+    on abril 09, 2021, at 02:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\David\\Documents\\GitHub\\outreach_wm\\task\\pavlovia_\\task_lastrun.py',
+    originPath='C:\\Users\\David\\Documents\\GitHub\\outreach_wm\\task\\pavlovia_\\task.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -91,9 +91,9 @@ key_resp_3 = keyboard.Keyboard()
 
 # Initialize components for Routine "delay_short"
 delay_shortClock = core.Clock()
-pos0 = visual.Rect(
+pos0 = visual.Polygon(
     win=win, name='pos0',
-    width=(0.1, 0.1)[0], height=(0.1, 0.1)[1],
+    edges=100, size=(0.1, 0.1),
     ori=90, pos=(0.4, 0),
     lineWidth=0.005, lineColor=1.0, lineColorSpace='rgb',
     fillColor=1.0, fillColorSpace='rgb',
