@@ -33,7 +33,7 @@
   </Settings>
   <Routines>
     <Routine name="feedback">
-      <TextComponent name="text_2">
+      <TextComponent name="final_text">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -42,7 +42,7 @@
         <Param name="font" updates="constant" val="Calibri" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.025" valType="code"/>
-        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="name" updates="None" val="final_text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -57,14 +57,14 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp_2">
+      <KeyboardComponent name="final_key">
         <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="name" updates="None" val="final_key" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -296,7 +296,7 @@
         <Param name="size" updates="constant" val="(0.1,0.1)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="7" valType="code"/>
+        <Param name="startVal" updates="None" val="6" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -314,13 +314,13 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="7" valType="code"/>
+        <Param name="startVal" updates="None" val="6" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
         <Param name="timeRelativeTo" updates="constant" val="experiment" valType="str"/>
       </MouseComponent>
-      <TextComponent name="text">
+      <TextComponent name="cross_short">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -329,7 +329,7 @@
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="name" updates="None" val="cross_short" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -345,7 +345,51 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
     </Routine>
-    <Routine name="delay_long">
+    <Routine name="Instructions">
+      <TextComponent name="text_instr">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="10" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Calibri" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="text_instr" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.025)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="¡Bienvenido!&amp;#10;&amp;#10;En este test de working memory tendrás que memorizar la posición de los diferentes colores.&amp;#10;&amp;#10;Después de memorizarlos deberás hacer click en la posición del color que te indiquemos (el color aparecerá encima de la cruz central acabado el tiempo de memorización).&amp;#10;&amp;#10;Aunque no estés seguro, arriésgate!&amp;#10;&amp;#10;El número de items a recordar así como el tiempo de memorización irán variando para hacerlo más complicado, ¡no te asustes!&amp;#10;&amp;#10;La duración total es de entre 10-15min&amp;#10;&amp;#10;Cuando lo tengas claro, pulsa  &quot;space&quot;para empezar." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_instr">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_instr" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="delay_intermediate">
       <PolygonComponent name="pos0_2">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -565,7 +609,7 @@
         <Param name="size" updates="constant" val="(0.1,0.1)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="14" valType="code"/>
+        <Param name="startVal" updates="None" val="9" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -583,13 +627,13 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="14" valType="code"/>
+        <Param name="startVal" updates="None" val="9" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
         <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
       </MouseComponent>
-      <TextComponent name="text_4">
+      <TextComponent name="cross_inter">
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -598,7 +642,7 @@
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="text_4" valType="code"/>
+        <Param name="name" updates="None" val="cross_inter" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -614,79 +658,317 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
     </Routine>
-    <Routine name="Instructions">
-      <TextComponent name="text_3">
-        <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+    <Routine name="delay_long">
+      <PolygonComponent name="pos0_3">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="10" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Calibri" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
-        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color0_r, $Color0_g, $Color0_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color0_r, $Color0_g, $Color0_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="0.005" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos0_3" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.1, 0.025)" valType="code"/>
+        <Param name="ori" updates="constant" val="90" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos45_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color45_r, $Color45_g, $Color45_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color45_r, $Color45_g, $Color45_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos45_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.25, 0.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos90_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color90_r, $Color90_g, $Color90_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color90_r, $Color90_g, $Color90_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="0.005" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos90_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos135_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color135_r, $Color135_g, $Color135_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color135_r, $Color135_g, $Color135_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos135_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.25, 0.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos180_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color180_r, $Color180_g, $Color180_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color180_r, $Color180_g, $Color180_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos180_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.4, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos225_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color225_r, $Color225_g, $Color225_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color225_r, $Color225_g, $Color225_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos225_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.25, -0.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos270_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color270_r, $Color270_g, $Color270_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color270_r, $Color270_g, $Color270_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos270_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="pos315_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Color315_r, $Color315_g, $Color315_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Color315_r, $Color315_g, $Color315_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="pos315_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.25, -0.25)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="response_3">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="[$Cueresp_r, $Cueresp_g, $Cueresp_b]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="[$Cueresp_r, $Cueresp_g, $Cueresp_b]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="100" valType="int"/>
+        <Param name="name" updates="None" val="response_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.1,0.1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="12" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="¡Bienvenido!&amp;#10;&amp;#10;En este test de working memory tendrás que memorizar la posición de los diferentes colores.&amp;#10;&amp;#10;Después de memorizarlos deberás hacer click en la posición del color que te indiquemos (el color aparecerá encima de la curz central acabado el tiempo de memorización).&amp;#10;&amp;#10;Aunque no estés seguro, arriésgate!&amp;#10;&amp;#10;El número de items a recordar así como el tiempo de memorización irán variando para hacerlo más complicado, ¡no te asustes!&amp;#10;&amp;#10;La durada total es de entre 10-15min&amp;#10;&amp;#10;Cuando lo tengas claro, pulsa  &quot;space&quot;para empezar." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <KeyboardComponent name="key_resp_3">
-        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
+      </PolygonComponent>
+      <MouseComponent name="mouse_3">
+        <Param name="clickable" updates="constant" val="" valType="code"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="any click" valType="str"/>
+        <Param name="name" updates="None" val="mouse_3" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="on click" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="name, time" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="5" valType="code"/>
+        <Param name="startVal" updates="None" val="12" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="experiment" valType="str"/>
+      </MouseComponent>
+      <TextComponent name="cross_long">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="cross_long" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
     </Routine>
   </Routines>
   <Flow>
     <Routine name="Instructions"/>
-    <LoopInitiator loopType="TrialHandler" name="trials">
+    <LoopInitiator loopType="TrialHandler" name="trials_short">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 180), ('load', 3), ('delay', 2), ('trial', 0)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 3), ('delay', 2), ('trial', 1)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 270), ('load', 3), ('delay', 2), ('trial', 2)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 315), ('load', 3), ('delay', 2), ('trial', 3)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 180), ('load', 3), ('delay', 2), ('trial', 4)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 0), ('load', 3), ('delay', 2), ('trial', 5)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', -1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 180), ('load', 3), ('delay', 2), ('trial', 6)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 3), ('delay', 2), ('trial', 7)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', -1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 45), ('load', 7), ('delay', 2), ('trial', 0)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 90), ('load', 7), ('delay', 2), ('trial', 1)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', -1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 90), ('load', 7), ('delay', 2), ('trial', 2)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 315), ('load', 7), ('delay', 2), ('trial', 3)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 7), ('delay', 2), ('trial', 4)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', -1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 225), ('load', 7), ('delay', 2), ('trial', 5)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 135), ('load', 7), ('delay', 2), ('trial', 6)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 225), ('load', 7), ('delay', 2), ('trial', 7)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="trials_short_delay2.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 0), ('load', 3), ('delay', 1), ('trial', 0)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 3), ('delay', 1), ('trial', 1)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 135), ('load', 3), ('delay', 1), ('trial', 2)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 0), ('load', 3), ('delay', 1), ('trial', 3)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 135), ('load', 3), ('delay', 1), ('trial', 4)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 315), ('load', 3), ('delay', 1), ('trial', 5)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', -1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 0), ('load', 3), ('delay', 1), ('trial', 6)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', -1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', -1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 90), ('load', 3), ('delay', 1), ('trial', 7)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', -1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 180), ('load', 7), ('delay', 1), ('trial', 0)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 315), ('load', 7), ('delay', 1), ('trial', 1)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', -1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 180), ('load', 7), ('delay', 1), ('trial', 2)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', -1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 180), ('load', 7), ('delay', 1), ('trial', 3)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 135), ('load', 7), ('delay', 1), ('trial', 4)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 270), ('load', 7), ('delay', 1), ('trial', 5)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 45), ('load', 7), ('delay', 1), ('trial', 6)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 180), ('load', 7), ('delay', 1), ('trial', 7)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="trials_short_delay3.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="name" updates="None" val="trials_short" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="delay_short"/>
-    <LoopTerminator name="trials"/>
-    <LoopInitiator loopType="TrialHandler" name="trials_2">
+    <LoopTerminator name="trials_short"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_inter">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('Color0', [0, 0, 0]), ('Color45', [1, 1, 1]), ('Color90', [0, 0, 0]), ('Color135', [0, 0, 0]), ('Color180', [-1, 1, 1]), ('Color225', [0, 0, 0]), ('Color270', [0, 0, 0]), ('Color315', [-1, 1, -1]), ('Cueresp', [-1, 1, -1]), ('target_angle', 315), ('load', 3), ('delay', 9), ('trial', 0)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [1, 1, 1]), ('Color90', [0, 0, 0]), ('Color135', [0, 0, 0]), ('Color180', [-1, 1, -1]), ('Color225', [0, 0, 0]), ('Color270', [1, -1, -1]), ('Color315', [0, 0, 0]), ('Cueresp', [-1, 1, -1]), ('target_angle', 180), ('load', 3), ('delay', 9), ('trial', 1)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [1, 1, 1]), ('Color90', [0, 0, 0]), ('Color135', [0, 0, 0]), ('Color180', [1, -1, 1]), ('Color225', [1, 1, -1]), ('Color270', [0, 0, 0]), ('Color315', [0, 0, 0]), ('Cueresp', [1, 1, -1]), ('target_angle', 225), ('load', 3), ('delay', 9), ('trial', 2)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [1, 1, 1]), ('Color90', [-1, -1, 1]), ('Color135', [0, 0, 0]), ('Color180', [0, 0, 0]), ('Color225', [0, 0, 0]), ('Color270', [0, 0, 0]), ('Color315', [1, -1, 1]), ('Cueresp', [-1, -1, 1]), ('target_angle', 90), ('load', 3), ('delay', 9), ('trial', 3)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [0, 0, 0]), ('Color90', [1, -1, -1]), ('Color135', [0, 0, 0]), ('Color180', [0, 0, 0]), ('Color225', [0, 0, 0]), ('Color270', [1, -1, 1]), ('Color315', [-1, 1, 1]), ('Cueresp', [-1, 1, 1]), ('target_angle', 315), ('load', 3), ('delay', 9), ('trial', 4)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [0, 0, 0]), ('Color90', [0, 0, 0]), ('Color135', [1, -1, -1]), ('Color180', [0, 0, 0]), ('Color225', [-1, 1, 1]), ('Color270', [0, 0, 0]), ('Color315', [-1, 1, -1]), ('Cueresp', [-1, 1, -1]), ('target_angle', 315), ('load', 3), ('delay', 9), ('trial', 5)]), OrderedDict([('Color0', [1, -1, 1]), ('Color45', [0, 0, 0]), ('Color90', [0, 0, 0]), ('Color135', [1, 1, 1]), ('Color180', [0, 0, 0]), ('Color225', [0, 0, 0]), ('Color270', [0, 0, 0]), ('Color315', [1, -1, -1]), ('Cueresp', [1, 1, 1]), ('target_angle', 135), ('load', 3), ('delay', 9), ('trial', 6)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [0, 0, 0]), ('Color90', [-1, -1, 1]), ('Color135', [0, 0, 0]), ('Color180', [1, 1, -1]), ('Color225', [0, 0, 0]), ('Color270', [1, -1, 1]), ('Color315', [0, 0, 0]), ('Cueresp', [-1, -1, 1]), ('target_angle', 90), ('load', 3), ('delay', 9), ('trial', 7)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [-1, 1, -1]), ('Color90', [-1, 1, 1]), ('Color135', [1, 1, 1]), ('Color180', [-1, -1, 1]), ('Color225', [1, 1, -1]), ('Color270', [1, -1, -1]), ('Color315', [1, -1, 1]), ('Cueresp', [1, -1, -1]), ('target_angle', 270), ('load', 7), ('delay', 9), ('trial', 0)]), OrderedDict([('Color0', [1, -1, -1]), ('Color45', [-1, 1, -1]), ('Color90', [0, 0, 0]), ('Color135', [1, 1, -1]), ('Color180', [1, -1, 1]), ('Color225', [-1, 1, 1]), ('Color270', [1, 1, 1]), ('Color315', [-1, -1, 1]), ('Cueresp', [-1, 1, 1]), ('target_angle', 225), ('load', 7), ('delay', 9), ('trial', 1)]), OrderedDict([('Color0', [1, 1, -1]), ('Color45', [1, -1, 1]), ('Color90', [-1, 1, 1]), ('Color135', [1, 1, 1]), ('Color180', [1, -1, -1]), ('Color225', [-1, 1, -1]), ('Color270', [-1, -1, 1]), ('Color315', [0, 0, 0]), ('Cueresp', [1, 1, 1]), ('target_angle', 135), ('load', 7), ('delay', 9), ('trial', 2)]), OrderedDict([('Color0', [-1, 1, 1]), ('Color45', [1, 1, 1]), ('Color90', [-1, 1, -1]), ('Color135', [1, -1, 1]), ('Color180', [0, 0, 0]), ('Color225', [1, 1, -1]), ('Color270', [1, -1, -1]), ('Color315', [-1, -1, 1]), ('Cueresp', [1, -1, -1]), ('target_angle', 270), ('load', 7), ('delay', 9), ('trial', 3)]), OrderedDict([('Color0', [-1, 1, -1]), ('Color45', [-1, 1, 1]), ('Color90', [1, 1, -1]), ('Color135', [1, -1, -1]), ('Color180', [1, -1, 1]), ('Color225', [0, 0, 0]), ('Color270', [1, 1, 1]), ('Color315', [-1, -1, 1]), ('Cueresp', [-1, -1, 1]), ('target_angle', 315), ('load', 7), ('delay', 9), ('trial', 4)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [1, 1, -1]), ('Color90', [1, -1, -1]), ('Color135', [-1, 1, 1]), ('Color180', [-1, 1, -1]), ('Color225', [-1, -1, 1]), ('Color270', [1, 1, 1]), ('Color315', [1, -1, 1]), ('Cueresp', [-1, -1, 1]), ('target_angle', 225), ('load', 7), ('delay', 9), ('trial', 5)]), OrderedDict([('Color0', [0, 0, 0]), ('Color45', [1, 1, 1]), ('Color90', [1, -1, 1]), ('Color135', [1, -1, -1]), ('Color180', [-1, 1, 1]), ('Color225', [-1, -1, 1]), ('Color270', [1, 1, -1]), ('Color315', [-1, 1, -1]), ('Cueresp', [-1, 1, 1]), ('target_angle', 180), ('load', 7), ('delay', 9), ('trial', 6)]), OrderedDict([('Color0', [-1, -1, 1]), ('Color45', [1, 1, -1]), ('Color90', [1, 1, 1]), ('Color135', [0, 0, 0]), ('Color180', [1, -1, 1]), ('Color225', [-1, 1, 1]), ('Color270', [-1, 1, -1]), ('Color315', [1, -1, -1]), ('Cueresp', [1, -1, 1]), ('target_angle', 180), ('load', 7), ('delay', 9), ('trial', 7)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="trials_long_delay.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 135), ('load', 3), ('delay', 4), ('trial', 0)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 135), ('load', 3), ('delay', 4), ('trial', 1)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 135), ('load', 3), ('delay', 4), ('trial', 2)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 180), ('load', 3), ('delay', 4), ('trial', 3)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 3), ('delay', 4), ('trial', 4)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 0), ('load', 3), ('delay', 4), ('trial', 5)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 90), ('load', 3), ('delay', 4), ('trial', 6)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 225), ('load', 3), ('delay', 4), ('trial', 7)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 0), ('load', 7), ('delay', 4), ('trial', 0)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', -1), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 0), ('load', 7), ('delay', 4), ('trial', 1)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', -1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 45), ('load', 7), ('delay', 4), ('trial', 2)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 0), ('load', 7), ('delay', 4), ('trial', 3)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', -1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 270), ('load', 7), ('delay', 4), ('trial', 4)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 0), ('load', 7), ('delay', 4), ('trial', 5)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 270), ('load', 7), ('delay', 4), ('trial', 6)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', -1), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 0), ('load', 7), ('delay', 4), ('trial', 7)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="trials_inter_delay3.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="name" updates="None" val="trials_inter" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="delay_intermediate"/>
+    <LoopTerminator name="trials_inter"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_long">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 315), ('load', 3), ('delay', 7), ('trial', 0)]), OrderedDict([('Color0_r', -1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 0), ('load', 3), ('delay', 7), ('trial', 1)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', -1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 225), ('load', 3), ('delay', 7), ('trial', 2)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 90), ('load', 3), ('delay', 7), ('trial', 3)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 225), ('load', 3), ('delay', 7), ('trial', 4)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', -1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 45), ('load', 3), ('delay', 7), ('trial', 5)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 90), ('load', 3), ('delay', 7), ('trial', 6)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', 1), ('Color135_r', 1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', -1), ('Color180_b', -1), ('Color225_r', 0), ('Color225_g', 0), ('Color225_b', 0), ('Color270_r', 0), ('Color270_g', 0), ('Color270_b', 0), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 135), ('load', 3), ('delay', 7), ('trial', 7)]), OrderedDict([('Color0_r', -1), ('Color0_g', -1), ('Color0_b', 1), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 0), ('Color90_g', 0), ('Color90_b', 0), ('Color135_r', 1), ('Color135_g', -1), ('Color135_b', -1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', -1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', 1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 180), ('load', 7), ('delay', 7), ('trial', 0)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', 0), ('Color135_g', 0), ('Color135_b', 0), ('Color180_r', -1), ('Color180_g', -1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 7), ('delay', 7), ('trial', 1)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', -1), ('Color45_r', 1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', -1), ('Color270_b', 1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 90), ('load', 7), ('delay', 7), ('trial', 2)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', -1), ('Color315_g', 1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', -1), ('target_angle', 90), ('load', 7), ('delay', 7), ('trial', 3)]), OrderedDict([('Color0_r', 1), ('Color0_g', -1), ('Color0_b', -1), ('Color45_r', 0), ('Color45_g', 0), ('Color45_b', 0), ('Color90_r', 1), ('Color90_g', 1), ('Color90_b', 1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', 1), ('Cueresp_g', 1), ('Cueresp_b', 1), ('target_angle', 90), ('load', 7), ('delay', 7), ('trial', 4)]), OrderedDict([('Color0_r', 0), ('Color0_g', 0), ('Color0_b', 0), ('Color45_r', -1), ('Color45_g', 1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', -1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', 1), ('Cueresp_r', -1), ('Cueresp_g', 1), ('Cueresp_b', -1), ('target_angle', 90), ('load', 7), ('delay', 7), ('trial', 5)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', 1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', -1), ('Color90_g', 1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', -1), ('Color135_b', 1), ('Color180_r', 0), ('Color180_g', 0), ('Color180_b', 0), ('Color225_r', -1), ('Color225_g', 1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 1), ('Color315_g', -1), ('Color315_b', -1), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 45), ('load', 7), ('delay', 7), ('trial', 6)]), OrderedDict([('Color0_r', 1), ('Color0_g', 1), ('Color0_b', 1), ('Color45_r', -1), ('Color45_g', -1), ('Color45_b', 1), ('Color90_r', 1), ('Color90_g', -1), ('Color90_b', -1), ('Color135_r', -1), ('Color135_g', 1), ('Color135_b', -1), ('Color180_r', -1), ('Color180_g', 1), ('Color180_b', 1), ('Color225_r', 1), ('Color225_g', -1), ('Color225_b', 1), ('Color270_r', 1), ('Color270_g', 1), ('Color270_b', -1), ('Color315_r', 0), ('Color315_g', 0), ('Color315_b', 0), ('Cueresp_r', 1), ('Cueresp_g', -1), ('Cueresp_b', 1), ('target_angle', 225), ('load', 7), ('delay', 7), ('trial', 7)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="trials_long_delay3.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_long" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="delay_long"/>
-    <LoopTerminator name="trials_2"/>
+    <LoopTerminator name="trials_long"/>
     <Routine name="feedback"/>
   </Flow>
 </PsychoPy2experiment>
